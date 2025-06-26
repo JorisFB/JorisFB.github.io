@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="boxed">
+            <div class="flex aligncenter space-between">
+                <button onclick="openMenu()" class="header-menu-mobile">
+                    <span class="material-icons">menu</span>
+                </button>
+                <a href="/" class="header-logo">
+                    <img src="images/html-logo.png">
+                </a>
+                <ul class="header-menu">
+                    <li><a href="#Acceuil">Acceuil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisation">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <img src="images/être-un-développeur-informatique.webp" class="slider-background" id="Acceuil">
+        <div class="slider-content">
+            <h1>Joris Fernandez Bruchet</h1>
+            <p>Je suis éléve en STI2D</p>
+        </div>
+
+        <div class="section" id="apropos">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100">
+                        <h2>À propos de moi</h2>
+                    </div>
+                    <div class="w60 wm100">
+                        <p>Je suis éléve au lycée La Chartreuse en 1ere STI2D. J'aime bien la programmation et pour mis
+                            initié j'ai fais des stages de programmation chez Campus26 pendant l'été et j'ai aussi fais
+                            CodeGT qui est un cours de programmation qui se déroulait le mardi soir aprés les cours. Je
+                            fais du tennis depuis 5ans et j'ai fais de la guitare pendant 7ans. J'aime bien les jeux
+                            vidéo, les ordinateurs, la moto et sortir avec mes amis. Je suis sociable, sympa, sérieux, à
+                            l'écoute et motivé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section dark" id="competences">
+            <div class="boxed text-center">
+                <h2>Découvrer mes compétences</h2>
+                <div class="flex toColumn gap20">
+                    <div class="w50 wm100 skill">
+                        <img src="images/html-logo.png">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="w50 wm100 skill">
+                        <img src="images/css-logo.png">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="realisation">
+            <div class="boxed text-center">
+                <h2>Mes réalisations</h2>
+                <div class="flex wrap gap20 space-between">
+                    <div class="w32 wm47 realisation">
+                        <a
+                            href="file:///home/dev/Documents/Logipro/joris/docker-compose-lamp/www/joris/livret/index%20copy.html">
+                            <img src="images/Screenshot from 2025-06-25 11-09-58.png">
+                            <h3>Site d'acceuil pour Logipro </h3>
+                        </a>
+                    </div>
+                    <div class="w32 wm47 realisation">
+                        <a
+                            href="file:///home/dev/Documents/Logipro/joris/docker-compose-lamp/www/joris/livret/guide.html">
+                            <img src="images/Screenshot from 2025-06-24 14-45-06.png">
+                            <h3>site pour Logipro</h3>
+                        </a>
+                    </div>
+                    <div class="w32 wm47 realisation">
+                        <a href="/">
+                            <img src="images/">
+                            <h3>Site Minecraft</h3>
+                        </a>
+                    </div>
+                    <div class="w32 wm47 realisation">
+                        <a href="/">
+                            <img src="images/">
+                        </a>
+                    </div>
+                    <div class="w32 wm47 realisation">
+                        <a href="/">
+                            <img src="images/">
+                        </a>
+                    </div>
+                    <div class="w32 wm47 realisation">
+                        <a href="/">
+                            <img src="images/">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section dark" id="contact">
+            <div class="boxed text-center">
+                <h2>Contactez-moi</h2>
+                <div class="flex toColumn space-between mgap20">
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">mail</span>
+                        <span class="label">E-mail</span>
+                        <span class="value">joris.60045@gmail.com</span>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">phone</span>
+                        <span class="label">Phone</span>
+                        <span class="value">06 80 72 44 76</span>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">language</span>
+                        <span class="label">instagram</span>
+                        <span class="value">Joris FB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+<script src="javascript/index.js"></script>
+
+</html>

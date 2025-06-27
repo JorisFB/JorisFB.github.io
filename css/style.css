@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -214,6 +215,7 @@ header {
     display: flex;
     align-items: center;
     list-style: none;
+ 
 }
 
 .header-menu li a {

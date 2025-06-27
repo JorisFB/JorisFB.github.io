@@ -344,3 +344,31 @@ header {
         gap: 20px;
     }
 }
+
+#steve {
+    width: 129px;
+    height: 140px;
+    position: absolute;
+    bottom:0;
+    left: -129px ;
+    background-image: url('https://i.ibb.co/LdWGT6DB/steve.png');
+    background-size: cover;
+    transition: top 0.3s;
+  }
+  
+  #steve.active {
+    animation: 0.8s infinite steps(8, start) walk;
+  }
+  
+  #steve.revert {
+    transform: scaleX(-1);
+  }
+  
+  @keyframes walk {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }

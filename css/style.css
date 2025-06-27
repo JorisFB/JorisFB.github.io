@@ -241,6 +241,10 @@ header {
 
 @media(max-width:810px) {
 
+    #steve{
+        display: none;
+    }
+
     header{
         height: 60px !important;
     }

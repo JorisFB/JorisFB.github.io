@@ -244,7 +244,7 @@ header {
 @media(max-width:810px) {
 
     #steve{
-        display: block;
+        display: none;
     }
 
     header{

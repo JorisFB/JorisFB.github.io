@@ -14,7 +14,7 @@ $(document).ready(function () {
     initMoveSteve();
 });
 
-const steve = $('#steve');
+const steve = $('steve');
 var speed = 10;
 var jumpHeight = 50;
 var introEnd = false;

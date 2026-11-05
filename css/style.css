@@ -357,7 +357,7 @@ header {
     position: absolute;
     bottom:0;
     left: -129px ;
-    background-image: url('images/steve1.png');
+    background-image: url('steve1.png');
     background-size: cover;
     transition: top 0.3s;
   }

@@ -62,18 +62,32 @@ function jump(){
 }
 
 function startIntro(){
+    let pos = steve.position();
+    if (!pos) return; // Sécurité si l'élément est masqué
     let halfWindow = $(document).width() * 0.5;
-    if(steve.position().left <= halfWindow){
-        steve.css('left', steve.position().left + speed); 
+    if(pos.left <= halfWindow){
+        steve.css('left', pos.left + speed); 
     }
     else{
-        steve.removeClass('active')
+        steve.removeClass('active');
         introEnd = true;
     }
 }
 
 function frame(timestamp) {
-    let steveLeft = steve.position().left;
+    // Si Steve est masqué (ex: sur mobile), on stoppe l'exécution de la frame
+    if (!steve.is(':visible')) {
+        requestAnimationFrame(frame);
+        return;
+    }
+    
+    let pos = steve.position();
+    if (!pos) {
+        requestAnimationFrame(frame);
+        return;
+    }
+    let steveLeft = pos.left;
+
     if (introEnd){
         if (keys['right'] && steveLeft + steve.width() + speed <= $(document).width()) {   
             steve.css('left', steveLeft + speed);
@@ -87,13 +101,13 @@ function frame(timestamp) {
         if (!keys['right'] && !keys['left']) {
             steve.removeClass('active');
         }
-        if ( keys['up']){
+        if (keys['up']){
             keys['up'] = false;
             jump();
         }
     }
     else {
-        startIntro()
+        startIntro();
     }
     
     requestAnimationFrame(frame);

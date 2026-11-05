@@ -15,7 +15,7 @@ $(document).ready(function () {
 });
 
 const steve = $('#steve');
-var speed = 10;
+var speed = 5;
 var jumpHeight = 50;
 var introEnd = false;
 var keys = {
